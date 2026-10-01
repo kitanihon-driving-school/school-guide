@@ -1,1 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>北日本自動車学校｜通学生 入校案内</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Noto Sans JP",
+        "Hiragino Kaku Gothic ProN",
+        "Yu Gothic", Meiryo, sans-serif;
+      background: #f5f7f5;
+      color: #333;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px 16px 40px;
+    }
+
+    .logo-area {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 22px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      text-align: center;
+    }
+
+    .logo-area img {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .title-area {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .title-area h1 {
+      margin: 0 0 10px;
+      font-size: 25px;
+      color: #333;
+    }
+
+    .title-area p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #666;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .menu-button {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      min-height: 76px;
+      padding: 15px 18px;
+      background: #ffffff;
+      border: 2px solid #8fc31f;
+      border-radius: 14px;
+      color: #333;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      transition: 0.15s;
+    }
+
+    .menu-button:active {
+      transform: scale(0.98);
+      background: #f3f9e8;
+    }
+
+    .icon {
+      width: 46px;
+      min-width: 46px;
+      height: 46px;
+      margin-right: 15px;
+      border-radius: 50%;
+      background: #8fc31f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 23px;
+    }
+
+    .menu-text {
+      flex: 1;
+    }
+
+    .menu-title {
+      display: block;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .menu-sub {
+      display: block;
+      font-size: 12px;
+      color: #777;
+    }
+
+    .arrow {
+      margin-left: 10px;
+      font-size: 22px;
+      color: #8fc31f;
+      font-weight: bold;
+    }
+
+    .notice {
+      margin-top: 25px;
+      padding: 16px;
+      background: #fff;
+      border-radius: 12px;
+      font-size: 13px;
+      line-height: 1.7;
+      color: #666;
+      text-align: center;
+    }
+
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        padding: 14px 12px 30px;
+      }
+
+      .logo-area {
+        padding: 14px;
+      }
+
+      .title-area h1 {
+        font-size: 22px;
+      }
+
+      .menu-title {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <div class="logo-area">
+      <img src="kitanihon_logo.png"
+           alt="KITANIHON DRIVING SCHOOL 北日本自動車学校">
+    </div>
+
+    <div class="title-area">
+      <h1>通学生の皆さまへ</h1>
+      <p>
+        北日本自動車学校へようこそ。<br>
+        通学生向けの入校・教習に関する資料をご確認ください。
+      </p>
+    </div>
+
+    <div class="menu">
+
+      <a class="menu-button"
+         href="#"
+         onclick="alert('資料は準備中です。'); return false;">
+        <span class="icon">📘</span>
+        <span class="menu-text">
+          <span class="menu-title">学校案内</span>
+          <span class="menu-sub">学校についてのご案内</span>
+        </span>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="menu-button"
+         href="#"
+         onclick="alert('資料は準備中です。'); return false;">
+        <span class="icon">📄</span>
+        <span class="menu-text">
+          <span class="menu-title">利用規約</span>
+          <span class="menu-sub">ご利用にあたっての規約</span>
+        </span>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="menu-button"
+         href="progress.html">
+        <span class="icon">🚗</span>
+        <span class="menu-text">
+          <span class="menu-title">教習の進め方</span>
+          <span class="menu-sub">入校から卒業までの流れ</span>
+        </span>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="menu-button"
+         href="admission.html">
+        <span class="icon">📋</span>
+        <span class="menu-text">
+          <span class="menu-title">入校時のご案内</span>
+          <span class="menu-sub">入校前にご確認ください</span>
+        </span>
+        <span class="arrow">›</span>
+      </a>
+
+    </div>
+
+    <div class="notice">
+      資料はスマートフォンでご覧いただけます。<br>
+      必要に応じて保存してご利用ください。
+    </div>
+
+    <footer>
+      © 北日本自動車学校
+    </footer>
+
+  </main>
+
+</body>
+</html>
